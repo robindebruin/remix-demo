@@ -27,14 +27,7 @@ export default function Index() {
                 Check the README.md file for instructions on how to get this
                 project deployed.
               </p>
-              <div className="mx-auto mt-16 max-w-7xl text-center">
-                <Link to="/posts" className="text-xl text-blue-600 underline">
-                  Blog Posts
-                </Link>{" "}
-                <Link to="/admin" className="text-xl text-red-600 underline">
-                  adming page
-                </Link>
-              </div>
+
               <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                 {user ? (
                   <Link
@@ -59,6 +52,17 @@ export default function Index() {
                     </Link>
                   </div>
                 )}
+              </div>
+              <div className="mx-auto mt-16 max-w-7xl text-center">
+                <Link to="/posts" className="text-xl text-blue-600 underline">
+                  Blog Posts
+                </Link>{" "}
+                <Link
+                  to="/posts/admin"
+                  className="text-xl text-red-600 underline"
+                >
+                  adming page
+                </Link>
               </div>
               <a href="https://remix.run">
                 <img
